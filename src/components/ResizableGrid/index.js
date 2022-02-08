@@ -172,8 +172,7 @@ const ResizableGrid = ({
       ref={containerRef}
       onMouseMove={onMouseMove}
       onMouseUp={onMouseUp}
-      draggable={false}
-      style={{ width, height, ...gridStyles }}
+      style={{ width, height, userSelect: 'none', ...gridStyles }}
     >
       {children}
       {splitLines.map(({ style, dir, index }) => (
